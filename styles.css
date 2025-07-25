@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #fdfaf3;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fdfaf3;
+    z-index: 1000;
+}
+
+.title {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: #ff4d00;
+    transition: 0.3s;
+}
+
+.name {
+    border-right: 2px solid #000;
+    padding: 1rem;
+}
+
+.resume-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-left: 2px solid #000;
+    padding: 1rem;
+    font-weight: 600 !important;
+}
+
+.main-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-component {
+    width: 60%;
+    border-right: 2px solid #000;
+    height: 100%;
+}
+
+.right-component {
+    width: 40%;
+    height: 100vh;
+    background-image: url(./assets/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+}
+
+.chip-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chip {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+    text-align: center;
+    border: 2px solid #000;
+    min-width: 100px;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.main-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.chip:hover {
+    background-color: #000;
+    color: #fdfaf3;
+    border-color: #fdfaf3;
+    transition: 0.3s;
+}
+
+.para,
+.list {
+    font-size: 18px;
+}
+
+.my-info {
+    border-bottom: 2px solid #000;
+    padding: 1.5rem;
+    margin-top: 4rem;
+}
+
+.education {
+    border-bottom: 2px solid #000;
+    padding: 1.5rem;
+}
+
+.social-component {
+    border-bottom: 2px solid #000;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-img {
+    border: 2px solid #000;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 1100px) {
+    .right-component,
+    .left-component {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .main-component {
+        flex-direction: column-reverse;
+    }
+    .right-component,
+    .left-component {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+    .chip {
+        font-size: 16px;
+        min-width: 0px;
+    }
+    .my-info {
+        margin-top: 0rem;
+    }
+    .socials-flex {
+        gap: 1rem;
+    }
+}
