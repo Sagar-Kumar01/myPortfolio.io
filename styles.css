@@ -173,3 +173,28 @@ body {
         gap: 1rem;
     }
 }
+
+#linkedin {
+    height: 35px;
+    width: 35px;
+}
+
+#leetcode {
+    height: 35px;
+    width: 35px;
+}
+
+.social-img a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.social-img img {
+    display: block;
+    height: 24px;
+    /* or 60-80% depending on your preferred size */
+    width: 24px;
+}
